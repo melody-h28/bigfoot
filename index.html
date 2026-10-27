@@ -1,1 +1,26 @@
-<img src="bigfoot.png" />
+<head>
+    <link rel="stylesheet" href="style.css"
+  </head>
+  <body onload="loadBigFoot()">
+   
+
+    <script>
+    function moveBigFoot() {
+        alert('Woohoo, you win! You found Bigfoot!')
+        var picture = document.getElementById('bigFoot')
+
+        var x = Math.random()*300;
+        var y = Math.random()*300;
+        
+        picture.style.top = x + 'px';picture.style.left = y + 'px';
+        }
+
+        function loadBigFoot() {
+  document.getElementById('bigFoot').src = 'assets/bigfoot.png'
+}
+ </script>
+   
+    <img id="bigFoot" onclick = "moveBigFoot()"; />
+    
+  </body>
+</html>
